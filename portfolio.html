@@ -11,6 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -18,97 +21,111 @@
 <body>
     <!--HEADER-->
     <header class="page-header">
-        <nav>
-            <a class="logo link" href=""><span class="web">Web</span>Studio</a>
-            <ul class="nav list">
-                <li><a class="nav-list link" href="index.html">Студия</a></li>
-                <li><a class="nav-list current link" href="">Портфолио</a></li>
-                <li><a class="nav-list link" href="">Контакты</a></li>
+        <div class="container header-container">
+            <nav class="navigation">
+                <a class="logo link" href=""><span class="web">Web</span>Studio</a>
+                <ul class="nav list">
+                    <li class="nav-list-item"><a class="nav-list current link" href="./index.html">Студия</a></li>
+                    <li class="nav-list-item"><a class="nav-list link" href="">Портфолио</a></li>
+                    <li class="nav-list-item"><a class="nav-list link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <ul class="contact list">
+                <li class="contact-list"><a class="contact-list-link link"
+                        href="mailauth-navto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contact-list"><a class="contact-list-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="contact-us list">
-            <li><a class="contact-us link" href="mailauth-navto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li><a class="contact-us link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
+
     <!--PORTFOLIO-->
     <main>
-        <section>
+        <section class="portfolio">
+            <div class="port-div container">
             <h2 hidden>Услуги</h2>
-            <ul class="list">
-                <li><button class="filter-button" type="button">Все</button></li>
-                <li><button class="filter-button" type="button">Веб-сайты</button></li>
-                <li><button class="filter-button" type="button">Приложения</button></li>
-                <li><button class="filter-button" type="button">Дизайн</button></li>
-                <li><button class="filter-button" type="button">Маркетинг</button></li>
+            <ul class="btn-port list">
+                <li class="btn-li"><button class="filter-button" type="button">Все</button></li>
+                <li class="btn-li"><button class="filter-button" type="button">Веб-сайты</button></li>
+                <li class="btn-li"><button class="filter-button" type="button">Приложения</button></li>
+                <li class="btn-li"><button class="filter-button" type="button">Дизайн</button></li>
+                <li class="btn-li"><button class="filter-button" type="button">Маркетинг</button></li>
             </ul>
+            
 
-            <ul class="list">
-                <li>
-                    <img src="./img/img-1.jpg" alt="ноутбук" width="370" height="294">
-                    <h3 class="filter-subtitle">Технокряк</h3>
-                    <p class="filter-descript">Веб-сайт</p>
+            
+            <ul class="filter list">
+                <li class="filter-list">
+                    <img class="filter-img" src="./img/img-1.jpg" alt="ноутбук" width="370" height="294">
+                    <h3 class="filter-subtitle" >Технокряк</h3>
+                    <p class="filter-descript" >Веб-сайт</p>
                 </li>
-                <li>
-                    <img src="./img/img-2.jpg" alt="играют в баскетболл" width="370" height="294">
+                <li class="filter-list">
+                    <img class="filter-img" src="./img/img-2.jpg" alt="играют в баскетболл" width="370" height="294">
                     <h3 class="filter-subtitle">Постер New Orlean vs Golden Star</h3>
                     <p class="filter-descript">Дизайн</p>
                 </li>
-                <li>
-                    <img src="./img/img-3.jpg" alt="логотип рыба" width="370" height="294">
+                <li class="filter-list">
+                    <img class="filter-img" src="./img/img-3.jpg" alt="логотип рыба" width="370" height="294">
                     <h3 class="filter-subtitle">Ресторан Seafood</h3>
                     <p class="filter-descript">Приложение</p>
                 </li>
-                <li>
-                    <img src="./img/img-4.jpg" alt="черные наушники" width="370" height="294">
+                <li class="filter-list">
+                    <img class="filter-img" src="./img/img-4.jpg" alt="черные наушники" width="370" height="294">
                     <h3 class="filter-subtitle">Проект Prime</h3>
                     <p class="filter-descript">Маркетинг</p>
                 </li>
-                <li>
-                    <img src="./img/img-5.jpg" alt="две коробки" width="370" height="294">
+                <li class="filter-list">
+                    <img class="filter-img" src="./img/img-5.jpg" alt="две коробки" width="370" height="294">
                     <h3 class="filter-subtitle">Проект Boxes</h3>
                     <p class="filter-descript">Приложение</p>
                 </li>
-                <li>
-                    <img src="./img/img-6.jpg" alt="монитор" width="370" height="294">
+                <li class="filter-list">
+                    <img class="filter-img" src="./img/img-6.jpg" alt="монитор" width="370" height="294">
                     <h3 class="filter-subtitle">Inspiration has no Borders</h3>
                     <p class="filter-descript">Веб-сайт</p>
                 </li>
-                <li>
-                    <img src="./img/img-7.jpg" alt="открытая книга" width="370" height="294">
+                <li class="filter-list">
+                    <img class="filter-img" src="./img/img-7.jpg" alt="открытая книга" width="370" height="294">
                     <h3 class="filter-subtitle">Издание Limited Edition</h3>
                     <p class="filter-descript">Дизайн</p>
                 </li>
-                <li>
-                    <img src="./img/img-8.jpg" alt="бирка с логотипом" width="370" height="294">
+                <li class="filter-list">
+                    <img class="filter-img" src="./img/img-8.jpg" alt="бирка с логотипом" width="370" height="294">
                     <h3 class="filter-subtitle">Проект LAB</h3>
                     <p class="filter-descript">Маркетинг</p>
                 </li>
-                <li>
-                    <img src="./img/img-9.jpg" alt="руки на клавиатуре ноутбука" width="370" height="294">
+                <li class="filter-list">
+                    <img class="filter-img" src="./img/img-9.jpg" alt="руки на клавиатуре ноутбука" width="370" height="294">
                     <h3 class="filter-subtitle">Growing Business</h3>
                     <p class="filter-descript"> Приложение</p>
                 </li>
             </ul>
+            </div>
 
         </section>
+     
 
     </main>
 
-    <!--FOOTER-->
-    <footer class="adress">
+<!--FOOTER-->
+<footer class="adress">
+    <div class="footer-div container">
         <a class="logo-footer link" href=""><span class="web">Web</span>Studio</a>
         <address>
             <ul class="adress-list list">
-                <li><a class="adress-list-map link" href=https://goo.gl/maps/yRMNTz1SN8P2guTi6 target="_blank"
-                        rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a class="adress-list-contact link" href=mailto:info@example.com>info@example.com</a></li>
-                <li><a class="adress-list-contact link" href=tel:+380991111111>+38 099 111 11 11</a></li>
+                <li class="adress-li"><a class="adress-list-map link" href=https://goo.gl/maps/yRMNTz1SN8P2guTi6
+                        target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                <li class="adress-li"><a class="adress-list-contact link"
+                        href=mailto:info@example.com>info@example.com</a></li>
+                <li class="adress-li"><a class="adress-list-contact link" href=tel:+380991111111>+38 099 111 11 11</a>
+                </li>
             </ul>
         </address>
+    </div>
 
-    </footer>
+</footer>
 
 </body>
 
