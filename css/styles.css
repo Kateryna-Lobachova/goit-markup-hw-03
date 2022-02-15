@@ -9,6 +9,7 @@
   --background-light-theme: #f5f4fa;
   --modal-button-hover-color: #188ce8;
   --adress-list-color: #ffffff99;
+  --border-filter-color: #eeeeee;
 }
 
 h1,
@@ -172,27 +173,19 @@ header {
 /*=====ABOUT=====*/
 .about {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .about-list {
   display: flex;
-  margin-bottom: 94px;
   box-sizing: content-box;
+}
+
+.about-list-li {
+  width: 270px;
 }
 
 .about-list-li:not(:last-child) {
   margin-right: 30px;
-}
-
-.img-about {
-  padding: 24px 100px;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-
-  background: var(--background-light-theme);
-  border-radius: 4px;
 }
 
 .about-title {
@@ -217,6 +210,10 @@ header {
   height: 75px;
 }
 
+.about-us {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .title {
   margin-bottom: 50px;
 
@@ -237,14 +234,12 @@ header {
 
 /*=====TEAM=====*/
 
-.soc-team-list {
+/* .soc-team-list {
   display: flex;
   justify-content: center;
-
-  padding-bottom: 30px;
 }
 
-.soc-team-img {
+/* .soc-team-img {
   padding: 12px;
   background: rgba(255, 255, 255, 0.1);
 }
@@ -255,7 +250,8 @@ header {
 }
 .soc-team:not(:last-child) {
   margin-right: 10px;
-}
+} */
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -270,6 +266,8 @@ header {
   margin-right: 30px;
 }
 .team-li {
+  width: 270px;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -280,10 +278,11 @@ header {
 .team {
   background-color: var(--background-light-theme);
 }
-.team-img {
-  margin-bottom: 30px;
-}
 
+.team-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-name {
   margin-bottom: 10px;
 
@@ -295,8 +294,6 @@ header {
   color: var(--title-color);
 }
 .team-post {
-  margin-bottom: 16px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -307,7 +304,7 @@ header {
 
 /*=====CUSTOMERS=====*/
 
-.customers-div {
+/* .customers-div {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -327,7 +324,7 @@ header {
 }
 .customers-li:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 /*=====FOOTER=====*/
 
@@ -337,6 +334,7 @@ footer {
   background-color: var(--background-dark-theme);
 }
 .logo-footer {
+  display: block;
   margin-bottom: 20px;
 
   font-family: var(--secondary-font-family);
@@ -349,7 +347,6 @@ footer {
 }
 
 .adress-list {
-  margin-top: 30px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -379,7 +376,7 @@ footer {
 
 /*=====PORTFOLIO=====*/
 
-.port-div {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -388,6 +385,31 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.filter-button {
+  padding: 12px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+
+  background: var(--background-light-theme);
+  border-radius: 4px;
+  border: none;
+
+  cursor: pointer;
+}
+.btn-li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--accent-font-color);
+  background-color: var(--accent-color);
 }
 
 .filter {
@@ -402,33 +424,17 @@ footer {
   margin-bottom: 30px;
 }
 
-.filter-button {
-  padding: 12px 22px;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+.filter-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
-  background: var(--background-light-theme);
-  border-radius: 4px;
-
-  cursor: pointer;
-}
-.btn-li:not(:last-child) {
-  margin-right: 8px;
+  border-right: 1px solid var(--border-filter-color);
+  border-left: 1px solid var(--border-filter-color);
+  border-bottom: 1px solid var(--border-filter-color);
 }
 
-.filter-button:hover,
-.filter-button:focus {
-  color: var(--accent-font-color);
-  background-color: var(--accent-color);
-}
-
-.img-port-list {
-  margin-bottom: 20px;
-}
 .filter-subtitle {
   margin-bottom: 4px;
 
